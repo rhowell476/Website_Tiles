@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HubbleStuff</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- JQuery -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+</head>
+<body id="hubble">
+    <header class="header">
+        <div id="nav-header" class="container">
+            <img src="../img/rh_icon.png" alt="RH-Home" class="index-logo">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="li__home"><a href="../index.html">Home</a></li>
+                    <li class="li__Newsletter"><a href="../email.html">Newsletter</a></li>
+                    <li class="li__hubble"><a href="/Hubble/HubbleLast.html">Hubble</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+
+<section id="Hubble_News" class="Hubbles">
+    <div class="hubble__main">
+        <div class = "grid-container hubble__main__top">
+            <header class="intro-last">
+                <h1 class="title-last">Hubble News</h1>
+                <p class="intro-last-paragraph">Both Hubble and James Webb space telescopes are current missions at the NASA. Each project has it's own website available below.
+                <img id="hubble-pic" src="../img/STScI-01F8AKVTTWX73WSMZNDQXAFS00.jpg" alt="Hubble-in-space">
+                <div>
+                <a href="https://hubblesite.org/" class="btn btn--primary">Hubble</a>
+                <a href="https://webbtelescope.org/" class="btn btn--primary">Webb</a>
+                </div>
+            </header>
+            <!-- Today APOD card-->
+            <aside id="nasa__apod" class="nasa__card">
+                <div>
+                <img id="apiHDimg" src="." alt="image_empty">
+                <h3>Astonomy&nbsp;Picture of&nbsp;the&nbsp;Day</h3>
+                <h4 id="apiDate">.</h4>
+                <button class="btn btn--secondary">view</button>
+                </div>
+            </aside><!-- Today APOD card end-->
+            <!-- Today APOD modal-->
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="closeBtn">&times;</span>
+                    <div class="apod__content">
+                        <h2 id="apiDate2">.</h2>
+                        <img id="apiHDimg2" src="." alt="image_empty">
+                        <iframe id="apiVid1" width="500" height="350" src="https://player.vimeo.com/video/67995158?title=0&portrait=0"></iframe>
+                        <h3 id="apiTitle">.</h3>
+                        <p id="apiExplanation">...my java broke</p>
+                    </div>
+                </div>
+            </div> <!-- Today APOD modal end--> 
+            <!-- APOD random card-->
+            <aside id="nasa__random" class="nasa__card">
+                <div>
+                <img id="api2HDimg" src="." alt="APOD-image" class="filler">
+                <h3>Random APOD</h3>
+                <h4 id="api2Date">Time not available</h4>
+                <button class="btn btn--secondary">Vew</button>
+                </div>
+            </aside> <!-- APOD random card end-->
+            <!-- APOD random modal -->
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="closeBtn">&times;</span>
+                    <div class="apod__content">
+                        <h2 id="api2Date2">.</h2>
+                        <img id="api2HDimg2" src="." alt="image_empty">
+                        <h3 id="api2Title">.</h3>
+                        <p id="api2Explanation">...my java broke</p>
+                    </div>
+                </div>
+            </div><!-- APOD random modal end -->
+        </div><!--End grid container-->
+        <div id="art-container">
+            <div class="article">
+                <div class="art_grid_container">
+                <img class="art_picture" src="https://www.teslarati.com/wp-content/uploads/2021/09/Starship-Boca-Chica-082621-NASASpaceflight-bocachicagal-S20-nose-TPS-1_stitch-c.jpg">
+                <h3 class="art_header">SpaceX repairing heat shield, reinstalling Raptors on first orbital-class Starship</h3>
+                <div class="art_descrip">SpaceX has begun reinstalling three of the six Raptor engines that will power the first orbital-class Starship and repairing the heat shield...</div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="art_grid_container">
+                <img class="art_picture" src="https://spacenews.com/wp-content/uploads/2021/09/Hurricane-and-satellite-lead_0.jpg">
+                <h3 class="art_header">Space Force delays selection of weather satellites</h3>
+                <div class="art_descrip">The EWS program office extended the competition to spring 2022, said Col. Brian Denaro, program executive officer for space development at the Space Systems Command</div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="art_grid_container">
+                <img class="art_picture" src="https://www.elonx.net/wp-content/uploads/E-O5GdvWEAAPfk8.jpg">
+                <h3 class="art_header">What have we learned so far about Crew Dragon’s cupola, the largest window to ever fly to space</h3>
+                <div class="art_descrip">In less than two weeks, the ground-breaking Inspiration4 mission is scheduled to launch a Crew Dragon spacecraft into orbit with four crew members, none of whom are professional astronauts. Crew Dragon for this mission is equipped with a glass cupola to give the crew the best possible view during their three-day stay in Earth orbit. What have we learned so far about the largest window to ever be flown to space?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div>
+        <p>Robert Howell<br>Designer/Developer<br><br>
+            Site moving to <a target="_blank" href="https://www.spaceflight.dev">SpaceFlight Console</a> 
+        <p class="timestamp"><br>Revision: 09/06/2021 08:56:46</p>
+    </div>
+</footer>
+
+<!-- My own scripts -->
+<script src="../js/modal-hubble.js"></script>
+<script src="../js/apod.js"></script>
+<script src="../js/navigation.js"></script>
+
+</body>
+</html>

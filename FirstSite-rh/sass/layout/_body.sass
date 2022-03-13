@@ -1,0 +1,325 @@
+#index
+    background: $index
+
+#email
+    background: $index
+
+#hubble
+    color: $primary
+    text-align: center
+    background: no-repeat $hubble_background
+    
+.hubble__main
+    color: $silver
+    padding: 3em .8em 6em
+    margin: 0 auto
+
+@media (min-width: 850px)
+    .grid-container
+        margin: 0 auto
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        grid-gap: 0 1.4em
+
+    #hubble-pic
+        max-height: 15em
+        width: auto
+        margin-top: 2em
+        margin-bottom: 1em
+
+.art-container
+    width: 100%
+
+/* Cards Start */
+
+.intro-last
+    background: #32466d
+    grid-column: 2 / -2
+    grid-row: 1 / 3
+    max-width: 850px
+    height: auto
+    margin: 3em auto
+
+.intro-last p
+    margin-inline: 1em
+
+.intro-last, .nasa__card
+    padding: 1.2em
+    border: 3px solid $white
+    color: $white
+
+.nasa__card div
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    position: relative
+    margin-block: auto 20%
+
+#nasa__apod, #nasa__random
+    margin: 4em 20% 0
+    border: none
+    background-color: rgba($primary, .7)
+    box-shadow: -8px 10px 7px rgba($primary, .4)
+    color: $silver
+    padding: 0
+    max-width: 25em
+    
+    img
+        top: 0
+
+    h3
+        padding-block: .4em
+        font-size: 1em
+
+    .btn
+        margin: 2em
+
+/* Screen size medium */
+
+@media (min-width: 850px)
+
+    .nasa__card div
+        margin-block: auto 5%
+
+    #nasa__apod
+        grid-column: 4 / -2
+        grid-row: 1 / 3
+        margin: auto
+
+        .modal
+            position: absolute
+            top: 0
+            height: 100vh
+            margin: 0
+
+    #nasa__random
+        grid-column: 1 / 2
+        grid-row: 1 / 3
+        margin: auto
+
+        .modal
+            position: absolute
+            top: 0
+            height: 100vh
+            margin: 0
+/* Card End */
+
+
+/* Modal Styling */
+
+.apod__content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    color: $primary
+    font-size: .8em
+
+    @media (min-width: 980px)
+        padding-inline: 5%
+
+#apiHDimg2, #api2HDimg2
+    padding-top: 2em
+    padding-bottom: 1.5em
+    margin: 0 auto
+
+#apiTitle, #pi2Title
+    padding-top: .4em
+    padding-bottom: 1em
+
+#apiExplanation, #api2Explanation
+    text-align: left
+    font-size: 1em
+
+    @media (min-width: 850px)
+        font-size: 1.5em
+/* Modal End */
+
+/* Articles Start*/
+
+.title-last
+    font-size: 44px
+    margin: 0 auto
+    padding-block: .25em
+
+.intro-last_last-paragraph
+    margin-inline: auto
+    margin-bottom: 1em
+
+.title-last-link
+    color: $white
+    font-weight: $font-bold
+    text-decoration: none
+
+.last-article
+    background: darken(#1e9dc2, 35%)
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: center
+    padding: 0 1em
+    margin: 4em auto
+    max-width: 85em
+    border: 5px solid $white
+
+    @media (min-width: 980px)
+        ~.last-article
+            margin-top: 4%
+
+.last-title
+    padding: .25em
+    border: .4rem solid $secondary
+    margin-top: 1em
+    margin-bottom: .7em
+
+@media (min-width: 980px)
+    .last-title
+        max-width: 60rem
+        margin-top: 2em
+        margin-bottom: 1.4em
+    .article-4 h2
+        padding-inline: 3.08em
+
+.last-picture__keystone
+    margin-block: .5em
+    margin-inline: auto
+    border: 1px solid $silver
+    padding: 0em
+    background-color: $white
+
+.last-publication
+    line-height: 1
+
+.last-abstract
+    padding: 1em 0
+    margin: 0 auto
+
+.last-abstract-title
+    text-align: left
+
+.last-abstract-paragraph
+    margin-top: 0
+    padding: 1em 0
+    text-align: left
+
+.last-credits
+    margin-inline: 1em
+    margin-bottom: 1em
+    padding-inline: 2em
+    padding-block: 1em
+    margin-right: auto
+    text-align: left
+    background-color: rgba(255, 255, 255, .1)
+
+.last-credits-title
+    padding: 0
+    text-decoration: underline
+
+.last-credits a
+    color: $silver
+    font-weight: $font-bold
+    text-decoration: none
+
+.last-credits a:hover
+    color: $purple
+
+.last-credits p
+    margin-top: .5em
+    font-size: 14px
+
+/* Articles Start*/
+#art-container
+    width: 100%
+    height: auto
+    display: grid
+    place-items: center
+
+.article
+    margin: 0 auto
+    @media (min-width: 1150px)
+        max-width: 70%
+
+@media (max-width: 950px)
+    .article:nth-child(n)
+        padding: 2em 1em 2em
+
+.art_grid_container
+    display: grid
+    grid-template-areas: "picture picture picture picture picture picture picture picture" "header header header header header header header header" "article article article article article article article article" "article article article article article article article article"
+    grid-template-rows: repeat(4, 1fr)
+    grid-template-columns: repeat(8, 1fr)
+    border: 1px solid $white
+    overflow: hidden
+
+    @media (min-width: 450px)
+        grid-template-areas: "picture picture picture picture picture picture picture picture" "picture picture picture picture picture picture picture picture" "header header header article article article article article" "header header header article article article article article" "header header header article article article article article"
+        grid-template-rows: repeat(5, 1fr)
+
+    @media (min-width: 700px)
+        grid-template-areas: "picture picture picture picture article article article article" "picture picture picture picture article article article article" "picture picture picture picture article article article article" "header header header header article article article article" "header header header header article article article article"
+
+    @media (min-width: 950px)
+        margin: 2em
+
+.art_header
+    grid-area: header
+    background-color: rgba($primary, .7)
+    margin: 0
+    width: auto
+    padding: 1em
+    display: grid
+    place-items: center
+    overflow: hidden
+    height: auto
+    font-size: 16px
+
+    @media (min-width: 450px)
+        font-size: 18px
+
+    @media (min-width: 700px)
+        font-size: 18px
+
+    @media (min-width: 950px)
+        font-size: 20px
+
+.art_picture
+    grid-area: picture
+    margin: 0
+    min-height: 100%
+    width: 100%
+    object-fit: cover
+
+.art_descrip
+    grid-area: article
+    padding: 1em
+    margin-inline: 3em
+    background-color: rgba($primary, .3)
+    margin: 0
+    display: grid
+    place-items: center
+    font-size: 14px
+    display: inline-block
+    height: auto
+
+    @media (min-width: 450px)
+        font-size: 16px
+
+    @media (min-width: 700px)
+        font-size: 16px
+
+    @media (min-width: 950px)
+        font-size: 18px
+
+
+/* Footer */
+
+footer p
+    font-size: 16px
+    line-height: 1.2
+    padding-top: 3em
+
+.timestamp
+    padding: 0
+    text-align: right
+    font-size: 12px

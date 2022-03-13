@@ -1,0 +1,164 @@
+.header
+    margin: 0 auto
+    width: 75vw
+
+#nav-header
+    width: 100%
+    max-height: 35vh
+    display: flex
+    flex-wrap: nowrap
+    flex-direction: column
+    justify-content: space-evenly
+    @media (min-width: 750px)
+        flex-direction: row
+
+.index-logo
+  max-height: 12em
+  width: auto
+  padding-top: 0
+  margin: 0 auto
+  
+@media (min-width: 750px)
+    .index-logo
+        margin: 0
+
+/* Navigation Start */
+    
+.nav
+    margin-top: 1.5em
+    padding: 0
+    margin: 0
+    background-color: $purple
+    position: absolute
+    top: 0
+    right: 0
+    left: 100%
+    transition: all ease-in-out 440ms
+    overflow: hidden
+
+    ul
+        list-style: none
+        height: 100vh
+        margin: 0
+        padding: 0
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+
+    li
+        flex: 1 1 auto
+        border-bottom: 2px solid white
+        display: flex
+
+    a 
+        text-decoration: none
+        color: $white
+        flex-basis: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+        @media (min-width: 750px)
+            color: $primary
+        
+    &.is-clicked
+        left: 0
+
+/* Navigation At Medium Screen - Nav button and menu disappear */
+
+@media (min-width: 750px) 
+    .nav
+        left: 0
+        display: block
+        height: 5em
+        position: relative
+        top: 4em
+        left: 0
+        right: 0
+        margin-inline: 1.5em
+        background-color: transparent
+        width: 55%
+    .nav ul
+        display: flex
+        flex-direction: row
+        height: 80%
+    .nav li
+        border: none
+    .nav li::after
+        content: ''
+        width: 2px
+        height: 20px
+        background-color: $primary
+        position: relative
+        right: 0
+        top: 50%
+        transform: translateY(-50%)
+    .nav-toggle
+        display: none
+
+.nav li:last-child::after
+    display: none
+
+.li__home a:hover
+    background: $primary
+    color: $text-inverse
+
+.li__Newsletter:hover
+    background: #D33A2C
+    
+.li__Newsletter a:hover
+    color: #FDFDFD
+
+.li__hubble:hover
+    background: $--clr-hubble
+    color: $silver
+  
+.li__hubble a:hover
+    color: $text-inverse
+  
+
+//Navigation Menu
+
+.nav-toggle
+    cursor: pointer
+    padding-block: 1em
+    width: 50px
+    height: 50px
+    margin: 0 auto 1em
+    transition: all ease-in-out 440ms
+
+    &.is-clicked
+        transform: translateX(200%)
+        cursor: crosshair
+
+.hamburger, .hamburger::after, .hamburger::before
+    content: ''
+    display: block
+    width: 30px
+    height: 3px
+    background: $--clr-body
+    transition: all ease-in-out 440ms
+    transform: translateX(.5em)
+    /* this is not centered!! */
+    
+
+.hamburger::before
+    transform: translateY(-6px)
+
+.hamburger::after
+    transform: translateY(3px)
+
+
+/* Animation when button is clicked */
+    
+.hamburger.is-clicked
+    transform: rotate(45deg) translateX(.35em) translateY(-.25em)
+    background: $white
+
+    &::after
+        transform: rotate(45deg)
+        opacity: 0
+        background: $white
+
+    &::before
+        transform: rotate(-90deg)
+        background: $white

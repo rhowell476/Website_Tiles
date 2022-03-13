@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Links</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- jQuery -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+</head>
+<body id="index">
+    <header class="header">
+        <div id="nav-header" class="container">
+            <img src="/img/rh_icon.png" alt="Yarrghh!" class="index-logo">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="li__home"><a href="/index.html">Home</a></li>
+                    <li class="li__Newsletter"><a href="/email.html">Newsletter</a></li>
+                    <li class="li__hubble"><a href="/Hubble/HubbleLast.html">Hubble</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle">
+                <div class="hamburger"></div>
+            </div>
+        </div>
+    </header>
+<section class="cards">
+    <div class="card-columns">
+        <div class="card">
+            <div class="card-content">
+                <img src="/img/reddit.jpg" alt="REDDIT-IMAGE" class="card-img card.reddit">
+            <div class="card-body">
+                <a href="https://www.reddit.com/submit" class="a__link" title="Reddit post" target="_blank">Reddit</a>
+                <h6 class="card-subtitle mb-2 text-muted">Reddit: the front page of the internet</h6>
+            </div>
+        </div>
+            <div id="RedditModal" class="modal">
+                <div class="modal-content">
+                    <span class="closeBtn">&times;</span>
+                    <img src="/img/reddit_modal.jpg" alt="Reddit-Modal-Image" class="modal__picture">
+                    <p>Reddit extras!</p>
+                    <div class="link-wrapper">
+                        <ul class="modal-content-links">
+                            <li><a class="btn--primary" href="https://www.reddit.com/submit">add_Post</a></li>
+                            <li><a class="btn--primary" href="https://praw.readthedocs.io/en/latest/">PRAW_docs</a></li>
+                            <li><a class="btn--primary" href="https://www.redditinc.com/">reddit_inc</a></li>
+                            <li><a class="btn--primary" href="https://www.redditgifts.com/">reddit_gifts</a></li>
+                            <li><a class="btn--primary" href="https://redditblog.com/topic/technology/">reddit_tech</a></li>
+                            <li><a class="btn--primary" href="https://www.reddit.com/r/AskReddit/comments/au6hjt/what_are_some_of_the_most_amazing_random_websites/">reddit_random</a></li>
+                            <li><a class="btn--primary" href="https://www.reddit.com">reddit_landing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="/img/einstein.jpg" alt="BOINC-IMAGE" class="card-img card.boinc">
+            <div class="card-body">
+                <a href="https://einstein.phys.uwm.edu" class="a__link" title="Einstein Home" target="_blank">Einstein@home</a>
+                <h6 class="card-subtitle mb-2 text-muted">Einstein@home Account Login Page</h6>
+            </div>
+        </div>
+            <div id="BOINCModal" class="modal">
+                <div class="modal-content">
+                    <span class="closeBtn">&times;</span>
+                    <img src="/img/boinc_modal.jpg" alt="BOINC-Modal-Image" class="modal__picture">
+                    <p>Here's BOINC!</p>
+                    <div class="link-wrapper">
+                        <ul class="modal-content-links">
+                            <li><a class="btn--primary" href="http://einstein.phys.uwm.edu/">login</a></li>
+                            <li><a class="btn--primary" href="https://einsteinathome.org/user/login?destination=dashboard">Dashboard</a></li>
+                            <li><a class="btn--primary" href="https://boinc.berkeley.edu/projects.php">BOINC_projects</a></li>
+                            <li><a class="btn--primary" href="https://boinc.berkeley.edu/trac/wiki/SoftwareAddon">BOINC_software</a></li>
+                            <li><a class="btn--primary" href="https://boinc.berkeley.edu/trac/wiki/BasicApi">BOINC_api</a></li>
+                            <li><a class="btn--primary" href="https://boinc.berkeley.edu/computing.php">BOINC_totals</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="/img/arrl2.jpg" alt="ARRL-IMAGE" class="card-img card__arrl">
+            <div class="card-body">
+                <a href="http://www.arrl.org/" class="a__link" title="Arrl" target="_blank">Arrl</a>
+                <h6 class="card-subtitle mb-2 text-muted">National Association for Amateur Radio</h6>
+            </div>
+        </div>
+            <div id="ArrlModal" class="modal">
+                <div class="modal-content">
+                    <span class="closeBtn">&times;</span>
+                    <img src="/img/arrl_modal.png" alt="ARRL-Modal-Image" class="modal__picture">
+                    <p>ARRL</p>
+                    <div class="link-wrapper">
+                        <ul class="modal-content-links">
+                            <li><a class="btn--primary" href="http://www.arrl.org/">arrl</a></li>
+                            <li><a class="btn--primary" href="https://www.arrl.org/users/login">arrl_login</a></li>
+                            <li><a class="btn--primary" href="https://www.arrl.org/fcc/search">arrl_license</a></li>
+                            <li title="Logbook of the World"><a class="btn--primary" href="https://p1k.arrl.org/lotwuser/lotwreport.adi">lotw</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="/img/space.jpg" alt="SPACE-IMAGE" class="card-img card.space">
+            <div class="card-body">
+                <a href="http://www.space.com/" class="a__link" title="Space" target="_blank">Space</a>
+                <h6 class="card-subtitle mb-2 text-muted">See what's trending in space</h6>
+            </div>
+        </div>
+            <div id="SpaceModal" class="modal">
+                <div class="modal-content">
+                    <span class="closeBtn">&times;</span>
+                    <img src="/img/space_modal.png" alt="SPACE-Modal-Image" class="modal__picture">
+                    <p>Space Stuff!</p>
+                    <div class="link-wrapper">
+                        <ul class="modal-content-links">
+                            <li><a class="btn--primary" href="https://www.space.com/">Space</a></li>
+                            <li><a class="btn--primary" href="https://api.nasa.gov/">NASA_api</a></li>
+                            <li><a class="btn--primary" href="https://www.programmableweb.com/api/mooncalc-rest-api">Moon_api</a></li>
+                            <li><a class="btn--primary" href="https://www.programmableweb.com/news/10-top-astronomy-apis/brief/2020/02/17">Astronomy_api</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="/img/microsoftdocs.jpg" alt="MICROSOFT-IMAGE" class="card-img card.microsoftdocs">
+            <div class="card-body">
+                <a href="https://docs.microsoft.com/en-us/" class="a__link" title="Microsoft Docs" target="_blank">Microsoft Docs</a>
+                <h6 class="card-subtitle mb-2 text-muted">.Net Website Build Tools and More</h6>
+            </div>
+        </div>
+            <div id="MicrosoftModal" class="modal">
+                <div class="modal-content">
+                    <span class="closeBtn">&times;</span>
+                    <img src="/img/microsoftdocs_modal.jpg" alt="MICROSOFT-Modal-Image" class="modal__picture">
+                    <p>Microsoft Docs</p>
+                    <div class="link-wrapper">
+                        <ul class="modal-content-links">
+                            <li><a class="btn--primary" href="https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/">C#</a></li>
+                            <li><a class="btn--primary" href="https://outlook.live.com/owa/">OWA</a></li>
+                            <li><a class="btn--primary" href="//portal.office.com">Portal</a></li>
+                            <li><a class="btn--primary" href="https://account.microsoft.com/account/">Account</a></li>
+                            <li><a class="btn--primary" href="https://insider.windows.com/en-us/">Insider</a></li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="/img/nasa.jpg" alt="NASA-IMAGE" class="card-img card.nasa">
+            <div class="card-body">
+                <a href="https://www.nasa.gov/" class="a__link" title="NASA" target="_blank">NASA</a>
+                <h6 class="card-subtitle mb-2 text-muted">National Aeronautics and Space Administration (USA)</h6>
+            </div>
+        </div>
+            <div id="NASAModal" class="modal">
+                <div class="modal-content">
+                    <span class="closeBtn">&times;</span>
+                    <img src="/img/nasa_modal.jpg" alt="NASA-Modal-Image" class="modal__picture">
+                    <p>NASA Links!</p>
+                    <div class="link-wrapper">
+                        <ul class="modal-content-links">
+                            <li><a class="btn--primary" href="https://www.nasa.gov/artemisprogram">NASA_artemis</a></li>
+                            <li><a class="btn--primary" href="https://mars.nasa.gov/">NASA_mars</a></li>
+                            <li><a class="btn--primary" href="https://www.nasa.gov/directorates/heo/scan/services/networks/deep_space_network/students/resources">NASA_dsn</a></li>
+                            <li><a class="btn--primary" href="https://Hubblesite.org/">Hubble</a></li>
+                            <li><a class="btn--primary" href="https://webbtelescope.org/">WEBB</a></li>
+                            <li><a class="btn--primary" href="https://eyes.nasa.gov/dsn/dsn.html">EYES</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <img src="/img/developer.jpg" alt="DEVEPLOPER-IMAGE" class="card-img card.developer">
+            <div class="card-body">
+                <a href="https://grow.google/developers/" class="a__link" title="Developer" target="_blank">Developer</a>
+                <h6 class="card-subtitle mb-2 text-muted">Web-page developing useful links</h6>
+            </div>
+        </div>
+            <div id="DeveloperModal" class="modal">
+                <div class="modal-content">
+                    <span class="closeBtn">&times;</span>
+                    <img src="/img/developer_modal.jpg" alt="Reddit-Modal-Image" class="modal__picture">
+                    <p>Useful developer links:</p>
+                    <div class="link-wrapper">
+                        <ul class="modal-content-links">
+                            <li><a class="btn--primary" href="http://validator.w3.org/">HTML_Validator</a></li>
+                            <li><a class="btn--primary" href="https://html.spec.whatwg.org/multipage/dom.html#kinds-of-content">HTML_Metadata</a></li>
+                            <li><a class="btn--primary" href="https://caniuse.com/">CSS_Support</a></li>
+                            <li><a class="btn--primary" href="https://www.w3schools.com/browsers/default.asp">CSS_Statistics</a></li>
+                            <li><a class="btn--primary" href="https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent">JS_MouseEvent</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div>
+        <p>Robert Howell<br>Designer/Developer<br><br>
+            Site moving to <a target="_blank" href="https://www.spaceflight.dev">SpaceFlight Console</a> 
+        <p class="timestamp"><br>Revision: 09/06/2021 08:56:46</p>
+    </div>
+</footer>
+
+<!-- My own scripts -->
+<script src="/js/navigation.js"></script>
+<script src="js/modal-reddit.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+.modal
+    display: none
+    position: fixed
+    z-index: 1
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    overflow: auto
+    background-color: rgba(255, 255, 255, .65)
+
+.btn
+    display: inline-block
+    text:
+        decoration: none
+    min-width: 6em
+    max-width: 60%
+    cursor: pointer
+
+a:hover
+    opacity: 80%
+
+.btn--secondary
+    background: $silver
+    color: $purple
+    text-transform: uppercase
+    letter-spacing: 1px
+    line-height: 1.2
+    border: 1px solid $primary
+    padding: .4em
+    margin: .5em auto
+
+    &:hover
+        transition: background-color 400ms
+        background-color: $purple
+        color: $text-inverse
+
+.btn--primary
+    padding: .8em
+    margin: .5em
+    background: $purple
+    color: $text-inverse
+    text-transform: uppercase
+    letter-spacing: 1px
+    line-height: 1.2
+    border: 1px solid $primary
+
+    &:hover
+        transition: background-color 400ms
+        background-color: $silver
+        color: $purple
+
+        a
+            color: $purple
+
+.closeBtn
+    color: darkgrey
+    margin-left: 97.5%
+    font-size: 30px
+
+.closeBtn:hover, .closeBtn:focus
+    color: black
+    text-decoration: none
+    cursor: pointer
